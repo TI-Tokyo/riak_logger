@@ -29,7 +29,7 @@ jobs:
         with:
           otp-version: ${{ matrix.otp }}
       - name: Download rebar3 from mother app
-        run: wget https://github.com/OpenRiak/riak/raw/refs/heads/openriak-3.6/rebar3
+        run: wget https://github.com/TI-Tokyo/riak/raw/refs/heads/openriak-3.6/rebar3
       - name: Compile
         run: ./rebar3 compile
       - name: Run xref and dialyzer
